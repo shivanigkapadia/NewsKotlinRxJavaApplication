@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvNewsDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivNewsImage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.55" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.45"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:paddingTop="3dp"
+                            android:paddingRight="2dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitle"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:paddingTop="2dp"
+                            android:paddingRight="2dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="13dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="6dp">
+
+                            <TextView
+                                android:id="@+id/tvAuthorName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/tvDash"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:text="-"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/tvPublishedAt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivMore"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_more_vert_black_24dp"></ImageView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
