@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NewsKotlinApplication</string>
+    <string name="app_name">NewsKotlinRxJavaApplication</string>
     <string name="no_internet">No Internet Connection!!!</string>
 
 </resources>
