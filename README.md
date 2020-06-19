@@ -1,5 +1,5 @@
 # NewsKotlinRxJavaApplication
-A Simple Android project of calling free news API using Kotlin, RxJava, CardView, RecyclerView, Android Jetpacks.
+A Simple Android project of calling free news API using Kotlin, RxJava, CardView, RecyclerView, Pagination, Android Jetpacks.
 This app includes one acitivity which contains News List with pagination.
 Free API : https://newsapi.org/
 
